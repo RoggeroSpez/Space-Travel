@@ -3,7 +3,7 @@ import styles from "./NavigationBar.module.css";
 function NavigationBar ()
 {
   const routes = [
-    {to: "/", text:"Home"},
+    {to: "/", text:"🥔Home🥔"},
     {to: "/spacecrafts", text: "🥔Spacecrafts🥔"},
     {to: "/planets", text: "🥔Planets🥔"}
   ];
