@@ -12,7 +12,11 @@ function Spacecrafts ()
 
   async function getSpacecrafts ()
   {
-    // todo get spacecrafts using the API
+    const {data: spacecrafts, isError} = await SpaceTravelApi.getSpacecrafts();
+    if (!isError)
+    {
+      setSpacecrafts(spacecrafts);
+    }
   }
 
   useEffect(() =>
@@ -33,7 +37,7 @@ function Spacecrafts ()
 
   function handleClickOfBuild ()
   {
-    // todo navigate to build spacecraft page
+   navigate("/spacecraft/build")
   }
 
   function handleClickOfImageContainer (event, id)
