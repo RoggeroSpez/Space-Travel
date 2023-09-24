@@ -1,0 +1,96 @@
+.planetWithSpacecrafts
+{
+  display: flex;
+  margin-bottom: 2rem;
+  border: 2px solid #ffffff;
+}
+
+.planet
+{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+  border: 2px dotted #ffffff;
+}
+
+.planet--selected
+{
+  border-color: #ce3d3d;
+}
+
+.planet:not(.planet--selected):hover
+{
+  border-color: #6cd265;
+}
+
+.planet__imageContainer
+{
+  flex-grow: 1;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+}
+
+.planet__image
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.planet__info
+{
+  font-size: 1rem;
+}
+
+.planet__spacecrafts
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.planet__spacecraft
+{
+  padding: 2rem 2rem 2rem 0;
+}
+
+.planet__spacecraft__imageContainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  cursor: grab;
+  border: 2px dotted #ffffff;
+}
+
+.planet__spacecraft--selected .planet__spacecraft__imageContainer
+{
+  border-color: #ce3d3d;
+}
+
+.planet__spacecraft:not(.planet__spacecraft--selected) .planet__spacecraft__imageContainer:hover
+{
+  border-color: #6cd265;
+}
+
+.planet__spacecraft__image
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.planet__spacecraft__image--default
+{
+  font-size: 2.4rem;
+}
+
+.planet__spacecraft__info
+{
+  font-size: 1rem;
+}

@@ -1,0 +1,27 @@
+.form__inputs
+{
+  padding: 2rem;
+  border: 2px solid #ffffff;
+  margin: 2rem 0;
+}
+
+.form__inputContainer:not(:last-child)
+{
+  margin-bottom: 2rem;
+}
+
+.submitContainer
+{
+  display: flex;
+}
+
+.errorContainer
+{
+  flex-grow: 1;
+}
+
+.error
+{
+  color: #ce3d3d;
+  margin-bottom: 2rem;
+}

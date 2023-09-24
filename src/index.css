@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after
+{
+  box-sizing: inherit;
+}
+
+html
+{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+button
+{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+button:hover
+{
+  border-color: #6cd265;
+}
+
+input,
+textarea
+{
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5rem;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  outline: none;
+  background-color: transparent;
+}
+
+textarea
+{
+  min-height: 12rem;
+}
+
+textarea:hover,
+input:hover
+{
+  border-color: #6cd265;
+}
