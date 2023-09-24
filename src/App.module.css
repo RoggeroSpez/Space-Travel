@@ -1,0 +1,29 @@
+.app
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.app__header,
+.app__main,
+.app__footer
+{
+  width: 100%;
+  max-width: 64rem;
+}
+
+.app__header,
+.app__footer
+{
+  height: 6rem;
+  margin: 3rem 6rem;
+}
+
+.app__main
+{
+  min-height: calc(100vh - 24rem);
+}
