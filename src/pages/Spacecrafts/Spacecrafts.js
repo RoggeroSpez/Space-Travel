@@ -1,6 +1,5 @@
 import {useState, useContext, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
-
 import styles from "./Spacecrafts.module.css";
 import {LoadingContext} from "../../context/LoadingProvider";
 import SpaceTravelApi from "../../services/SpaceTravelApi";
@@ -18,7 +17,6 @@ function Spacecrafts ()
       setSpacecrafts(spacecrafts);
     }
   }
-
   useEffect(() =>
             {
               async function runGetSpacecrafts ()
@@ -27,7 +25,6 @@ function Spacecrafts ()
                 await getSpacecrafts();
                 disableLoading();
               }
-
               runGetSpacecrafts();
             },
             [enableLoading, disableLoading]
@@ -37,7 +34,7 @@ function Spacecrafts ()
 
   function handleClickOfBuild ()
   {
-   navigate("/spacecraft/build")
+    navigate("/spacecraft/build")
   }
 
   function handleClickOfImageContainer (event, id)
@@ -59,7 +56,7 @@ function Spacecrafts ()
   return (
     <div>
       <button onClick={handleClickOfBuild}>
-        🏗 Build a Spacecraft
+       ⚒️ Build it up Scotty 🛠️
       </button>
       <div>
         {
@@ -99,7 +96,7 @@ function Spacecrafts ()
                 </div>
 
                 <div>
-                  <button onClick={(event) => handleClickOfDestroy(event, spacecraft.id)}>💥 Destroy</button>
+                  <button onClick={(event) => handleClickOfDestroy(event, spacecraft.id)}>♻️Recycle♻️</button>
                 </div>
               </div>
           )
