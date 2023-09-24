@@ -1,0 +1,26 @@
+.section__container
+{
+  font-size: 1.2rem;
+}
+
+.section__container:not(:last-child)
+{
+  margin-bottom: 4rem;
+}
+
+.section__container h1
+{
+  text-align: center;
+}
+
+.section__container h2
+{
+  margin-bottom: 1rem;
+}
+
+.section__container p
+{
+  padding: 2rem;
+  text-align: justify;
+  border: 2px dotted #ffffff;
+}
